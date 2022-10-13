@@ -9,7 +9,7 @@ namespace jumper.Game
         {
         }
         /// Gets text input from the terminal. Directs the user with the given prompt.
-        /// <returns>Inputted text.</returns>
+        /// <returns>Inputted text.
         public string ReadText(string prompt)
         {
             Console.Write(prompt);
