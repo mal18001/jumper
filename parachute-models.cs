@@ -1,11 +1,15 @@
 ﻿namespace jumper {
-    class model_specs {
+    class player {
+        public static player get_models = new player();
         private void models() {
-            string full_parachute;
-            string one_wrong;
-            string two_wrong;
-            string three_wrong;
-            string deceased_jumper;
+            string full_parachute = "\n\n         ___________________\n     ..''                   ''..\n  .''                          ''.\n /__...---''''''''''''''''---...__\\\n \\       \\                /       /\n   \\      \\              /      /\n     \\     \\            /     /\n       \\    \\          /    /\n         \\   \\        /   /\n           \\  \\      /  /\n             \\ \\    / /\n               \\\\  //\n               _.--._\n              : ^  ^ :\n              '.'--'.'\n                /||\\\n              /  ||  \\\n            /    ||    \\\n                 /\\\n                /  \\\n               /    \\\n              /      \\\n\n              4 Lives";
+            string one_wrong = "\n\n         ___________________\n     ..''                   ''..\n  .''                          ''.\n /__...---''''''''''''''''---...__\\\n \\                        /       /\n   \\                     /      /\n     \\                  /     /\n       \\               /    /\n         \\            /   /\n           \\         /  /\n             \\      / /\n               \\   //\n               _.--._\n              : o  o :\n              ' '--' '\n                /||\\\n              /  ||  \\\n            /    ||    \\\n                 /\\\n                /  \\\n               /    \\\n              /      \\\n\n              3 Lives";
+            string two_wrong = "\n\n         ___________________\n     ..''                   ''..\n  .''                          ''.\n /__...---''''''''''''''''---...__\\\n \\                                /\n   \\                            /\n     \\                        /\n       \\                    /\n         \\                /\n           \\            /\n             \\        /\n               \\    /\n               _.--._\n              : o  o :\n              '.----.'\n                /||\\\n              /  ||  \\\n            /    ||    \\\n                 /\\\n                /  \\\n               /    \\\n              /      \\\n\n              2 Lives";
+            string three_wrong = "\n\n         ___________________\n     ..''                   ''..\n  .''                          ''.\n /__...---''''''''''''''''---...__\\\n                                  /\n                                /\n                              /\n                            /\n                          /\n                        /\n                      /\n                    /\n               _.--._\n              : O__o :\n              '.(__).'\n                /||\\\n              /  ||  \\\n            /    ||    \\\n                 /\\\n                /  \\\n               /    \\\n              /      \\\n\n               1 Life";
+            string deceased_jumper = "\n\n               _.--._\n              : X  X :\n              '.----.'\n                /||\\\n              /  ||  \\\n            /    ||    \\\n                 /\\\n                /  \\\n               /    \\\n              /      \\\n\n            Game Over...";
+            string jumper_win = "\n\n\n               _.--._\n              : ^  ^ :\n              '.'--'.'\n                /||\\\n              /  ||  \\\n            /    ||    \\\n                 /\\\n                /  \\\n               /    \\\n              /      \\\n\n            You got it!!";
+        
         }
+
     }
 }
