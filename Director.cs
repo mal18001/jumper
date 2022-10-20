@@ -4,7 +4,9 @@
     {
         private bool _isPlaying = true;
         private TerminalService terminalService = new TerminalService();
-        /// Constructs a new instance of Director.
+        private player player = new player();
+        private Word word = new Word();
+         /// Constructs a new instance of Director.
         public Director()
         {
         }
@@ -23,6 +25,7 @@
         private void GetInputs()
         {
             string guess = terminalService.ReadText("\nGuess a letter [a-z]: ");
+            word.setPlayerGuess(guess);
         }
 
         /// Keeps watch on where the seeker is moving.
@@ -34,8 +37,6 @@
         /// Provides a hint for the seeker to use.
         private void DoOutputs()
         {
-            terminalService.WriteText("");
-
             
             _isPlaying = false;
 
