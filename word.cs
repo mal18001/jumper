@@ -7,7 +7,8 @@ namespace jumper.Game
         Random randomGenerator = new Random();
 
 
-        public Word(){
+        public Word()
+        {
             playerGuess = "";
             int index = randomGenerator.Next(0, 10);
 
@@ -34,7 +35,8 @@ namespace jumper.Game
             }
         }
 
-        public void setPlayerGuess(String guess){
+        public void setPlayerGuess(String guess)
+        {
             playerGuess = guess;
         }
     }

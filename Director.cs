@@ -6,7 +6,7 @@
         private TerminalService terminalService = new TerminalService();
         private player player = new player();
         private Word word = new Word();
-         /// Constructs a new instance of Director.
+        /// Constructs a new instance of Director.
         public Director()
         {
         }
@@ -24,6 +24,7 @@
 
         private void GetInputs()
         {
+            player.models();
             string guess = terminalService.ReadText("\nGuess a letter [a-z]: ");
             word.setPlayerGuess(guess);
         }
@@ -31,14 +32,17 @@
         /// Keeps watch on where the seeker is moving.
         private void DoUpdates()
         {
-            
+
         }
 
         /// Provides a hint for the seeker to use.
         private void DoOutputs()
         {
-            
-            _isPlaying = false;
+
+            if (player.lives() == 0)
+            {
+                _isPlaying = false;
+            }
 
         }
     }
