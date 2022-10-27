@@ -7,6 +7,7 @@ namespace jumper.Game
         /// Constructs a new instance of TerminalService.
         public TerminalService()
         {
+            
         }
         /// Gets text input from the terminal. Directs the user with the given prompt.
         /// <returns>Inputted text.
