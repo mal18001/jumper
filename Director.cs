@@ -14,6 +14,10 @@
         /// Starts the game by running the main game loop.
         public void StartGame()
         {
+            if (player.lives() == 0)
+            {
+                _isPlaying = false;
+            }
             while (_isPlaying)
             {
                 DoOutputs();
@@ -39,10 +43,6 @@
         private void DoOutputs()
         {
 
-            if (player.lives() == 0)
-            {
-                _isPlaying = false;
-            }
 
         }
     }
